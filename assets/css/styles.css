@@ -57,7 +57,7 @@ textarea {
     box-sizing: border-box;
 }
 input {
-    color: rgb(55, 55, 71);
+    color: #777;
     width: 100%;
     padding: 10px;
     margin-top: 5px;
