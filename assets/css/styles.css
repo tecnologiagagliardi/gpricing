@@ -58,7 +58,8 @@ textarea {
     box-sizing: border-box;
 }
 
-input {
+input,
+#marca {
     color: #777;
     width: 100%;
     padding: 10px;
