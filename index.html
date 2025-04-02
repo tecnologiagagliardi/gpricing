@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Pricing</title>
+    <link rel="icon" type="image/png" href="assets/images/gpricing.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img id="header-image" src="assets/images/gpricing.png" alt="G-Pricing"><br><br><br>
+        </header>
+        <form id="clienteForm">
+            <label for="codigo">Código do Cliente:</label>
+            <input type="text" id="codigo" name="codigo" placeholder="Ex: C000001" maxlength="7" required
+                oninput="this.value = this.value.toUpperCase();">
+
+            <label for="cnpj">CNPJ/CPF:</label>
+            <input type="text" id="cnpj" name="cnpj" placeholder="Ex: 08417568000114" maxlength="14" required
+                oninput="this.value = this.value.toUpperCase();">
+
+            <label for="razao">Razão Social:</label>
+            <input type="text" id="razao" name="razao" placeholder="Ex: GAGLIARDI DISTRIBUIDORA LTDA" maxlength="50"
+                required oninput="this.value = this.value.toUpperCase();">
+
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" placeholder="Ex: CE" maxlength="2" required
+                oninput="this.value = this.value.toUpperCase();">
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Ex: FORTALEZA" maxlength="35" required
+                oninput="this.value = this.value.toUpperCase();">
+
+            <label for="preco1">Preço KIT TITAN 125 CC:</label>
+            <input type="tel" id="preco1" name="preco1" placeholder="R$ 0,00" maxlength="9"
+                oninput="formatarMoeda(this)">
+
+            <label for="preco2">Preço KIT TITAN 125 CC 2009:</label>
+            <input type="tel" id="preco2" name="preco2" placeholder="R$ 0,00" maxlength="9"
+                oninput="formatarMoeda(this)">
+
+            <label for="preco3">Preço KIT BROS 150 CC:</label>
+            <input type="tel" id="preco3" name="preco3" placeholder="R$ 0,00" maxlength="9"
+                oninput="formatarMoeda(this)">
+
+            <label for="preco4">Preço KIT BROS 160 CC:</label>
+            <input type="tel" id="preco4" name="preco4" placeholder="R$ 0,00" maxlength="9"
+                oninput="formatarMoeda(this)">
+
+            <label for="preco5">Preço KIT POP 125 CC:</label>
+            <input type="tel" id="preco5" name="preco5" placeholder="R$ 0,00" maxlength="9"
+                oninput="formatarMoeda(this)">
+
+            <label for="preco6">Preço KIT BIZ 125 CC:</label>
+            <input type="tel" id="preco6" name="preco6" placeholder="R$ 0,00" maxlength="9"
+                oninput="formatarMoeda(this)">
+
+            <label for="marca">Qual a Marca mais vendida?</label>
+            <textarea id="marca" name="marca" required rows="3" placeholder="informe a marca mais vendida"
+                oninput="this.value = this.value.toUpperCase();"></textarea>
+
+            <button type="button" onclick="limparFormulario()">Cancelar</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        function formatarMoeda(campo) {
+            let valor = campo.value.replace(/\D/g, "");
+            valor = (parseInt(valor) / 100).toFixed(2);
+            valor = valor.replace(".", ",");
+            campo.value = "R$ " + valor;
+        }
+    </script>
+
+    <footer>
+        © 2025 - Gagliardi Distribuidora - Todos os direitos reservados.
+    </footer>
+
+</body>
+
+</html>
