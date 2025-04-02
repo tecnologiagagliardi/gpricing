@@ -4,6 +4,7 @@
   font-weight: bold;
   font-style: normal;
 }
+
 *{
   font-family: 'Magistral', sans-serif;
 }
@@ -56,6 +57,7 @@ textarea {
     font-size: 1.1rem;
     box-sizing: border-box;
 }
+
 input {
     color: #777;
     width: 100%;
