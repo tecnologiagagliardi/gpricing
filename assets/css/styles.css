@@ -4,13 +4,6 @@
   font-weight: bold;
   font-style: normal;
 }
-
-@font-face {
-  font-family: 'Magistral light';
-  src: url(../fonts/Magistral-Light.ttf) format('truetype');
-  font-weight: bold;
-  font-style: normal;
-} 
 *{
   font-family: 'Magistral', sans-serif;
 }
