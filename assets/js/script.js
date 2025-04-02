@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
     razaoInput.addEventListener("input", transformarMaiusculas);
     estadoInput.addEventListener("input", transformarMaiusculas);
     cidadeInput.addEventListener("input", transformarMaiusculas);
-    marcaInput.addEventListener("input", transformarMaiusculas);
 
     let clientesCache = null;
     const TAMANHO_CODIGO = 6;
