@@ -71,12 +71,12 @@ document.addEventListener("DOMContentLoaded", function () {
             Razão Social: ${razaoInput.value}
             Estado: ${estadoInput.value}
             Cidade: ${cidadeInput.value}
-            Preço KIT TITAN 125 CC: ${document.getElementById("preco1").value}
-            Preço KIT TITAN 125 CC 2009: ${document.getElementById("preco2").value}
-            Preço KIT BROS 150 CC: ${document.getElementById("preco3").value}
-            Preço KIT BROS 160 CC: ${document.getElementById("preco4").value}
-            Preço KIT POP 125 CC: ${document.getElementById("preco5").value}
-            Preço KIT BIZ 125 CC: ${document.getElementById("preco6").value}
+            R$ KIT TITAN 125 CC: ${document.getElementById("preco1").value}
+            R$ KIT TITAN 125 CC 2009: ${document.getElementById("preco2").value}
+            R$ KIT BROS 150 CC: ${document.getElementById("preco3").value}
+            R$ KIT BROS 160 CC: ${document.getElementById("preco4").value}
+            R$ KIT POP 125 CC: ${document.getElementById("preco5").value}
+            R$ KIT BIZ 125 CC: ${document.getElementById("preco6").value}
             Marca mais vendida:\n ${document.getElementById("marca").value}
         `;
         window.location.href = `mailto:${destinatario}?subject=Pesquisa de Preço&body=${encodeURIComponent(emailBody)}`;
