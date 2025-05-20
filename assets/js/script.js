@@ -71,13 +71,16 @@ document.addEventListener("DOMContentLoaded", function () {
             Razão Social: ${razaoInput.value}
             Estado: ${estadoInput.value}
             Cidade: ${cidadeInput.value}
-            R$ KIT TITAN 125 CC: ${document.getElementById("preco1").value}
-            R$ KIT TITAN 125 CC 2009: ${document.getElementById("preco2").value}
-            R$ KIT BROS 150 CC: ${document.getElementById("preco3").value}
-            R$ KIT BROS 160 CC: ${document.getElementById("preco4").value}
-            R$ KIT POP 125 CC: ${document.getElementById("preco5").value}
-            R$ KIT BIZ 125 CC: ${document.getElementById("preco6").value}
-            Marca mais vendida:\n ${document.getElementById("marca").value}
+            TIRRENO Global Concentrado Preço de Venda R$ por Litros: ${document.getElementById("preco1").value}
+            PARAFLU Concentrado Preço de Compra R$ por Litros: ${document.getElementById("preco2").value}
+            PARAFLU Concentrado Preço de Venda R$ por Litros: ${document.getElementById("preco3").value}
+            TIRRENO Global Pronto-Uso Preço de Venda R$ por Litros: ${document.getElementById("preco4").value}
+            PARAFLU Pronto-Uso Preço de Compra R$ por Litros: ${document.getElementById("preco5").value}
+            PARAFLU Pronto-Uso Preço de Venda R$ por Litros: ${document.getElementById("preco6").value}
+            TIRRENO Dot 4 Preço de Venda R$ por Litros: ${document.getElementById("preco7").value}
+            VARGA Dot 4 Preço de Compra R$ por Litros: ${document.getElementById("preco8").value}
+            VARGA Dot 4  Pronto- Uso Preço de Venda R$ por Litros: ${document.getElementById("preco9").value}
+            Mais vendido:\n ${document.getElementById("marca").value}
         `;
         window.location.href = `mailto:${destinatario}?subject=Pesquisa de Preço&body=${encodeURIComponent(emailBody)}`;
     });
