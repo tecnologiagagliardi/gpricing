@@ -1,2 +1,2 @@
-### 🖩 App de Pesquisa de Preço
+### 📅 App de Pesquisa de Preço
 https://tecnologiagagliardi.github.io/gpricing
