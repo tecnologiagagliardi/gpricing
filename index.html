@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPricing - Gagliardi</title>
+  <link rel="icon" type="image/png" href="assets/images/gps.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img id="header-image" src="assets/images/gpricing.png" alt="Grupo Gagliardi"><br>
+    </header>
+
+    <form id="gpricingForm">
+
+      <label>
+        Data da Pesquisa:
+        <input type="text" id="dataAtual" readonly>
+      </label>
+
+      <label>
+        Código do Cliente:
+        <input type="text" id="codigoCliente" required style="text-transform: uppercase;">
+      </label>
+
+      <label>
+        CNPJ/CPF:
+        <input type="text" id="cnpjCpf" required placeholder="Somente números">
+      </label>
+
+      <label>
+        Razão Social:
+        <input type="text" id="razaoSocial" required>
+      </label>
+
+      <label>
+        Cidade:
+        <input type="text" id="cidade" required style="text-transform: uppercase;">
+      </label>
+
+      <label>
+        Estado:
+        <input type="text" id="estado" required style="text-transform: uppercase;">
+      </label>
+
+      <hr>
+
+      <h3>Informar preço de aquisição CG 125 / 150 / 160</h3>
+
+      <label>Pneu Dianteiro Michelin 2.75-18:
+        <input type="text" id="cgDianteiroMichelin" inputmode="decimal" placeholder="R$ 0,00">
+      </label>
+
+      <label>Pneu Dianteiro Vipal 2.75-18:
+        <input type="text" id="cgDianteiroVipal" inputmode="decimal" placeholder="R$ 0,00">
+      </label>
+
+      <label>Pneu Traseiro Michelin 90/90-18:
+        <input type="text" id="cgTraseiroMichelin" inputmode="decimal" placeholder="R$ 0,00">
+      </label>
+
+      <label>Pneu Traseiro Vipal 90/90-18:
+        <input type="text" id="cgTraseiroVipal" inputmode="decimal" placeholder="R$ 0,00">
+      </label>
+
+      <hr>
+
+      <h3>Informar preço de aquisição BROS 150 / 160</h3>
+
+      <label>Pneu Dianteiro Michelin 90/90-19:
+        <input type="text" id="brosDianteiroMichelin" inputmode="decimal" placeholder="R$ 0,00">
+      </label>
+
+      <label>Pneu Dianteiro Vipal 90/90-19:
+        <input type="text" id="brosDianteiroVipal" inputmode="decimal" placeholder="R$ 0,00">
+      </label>
+
+      <label>Pneu Traseiro Michelin 110/90-17:
+        <input type="text" id="brosTraseiroMichelin" inputmode="decimal" placeholder="R$ 0,00">
+      </label>
+
+      <label>Pneu Traseiro Vipal 110/90-17:
+        <input type="text" id="brosTraseiroVipal" inputmode="decimal" placeholder="R$ 0,00">
+      </label>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <!-- MODAL -->
+  <div id="modalConfirmacao" class="modal">
+    <div class="modal-content">
+      <h2>Confirme suas informações</h2>
+      <pre id="modalTexto"></pre>
+      <div class="modal-buttons">
+        <button id="btnConfirmar">Enviar</button>
+        <button id="btnFechar">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
