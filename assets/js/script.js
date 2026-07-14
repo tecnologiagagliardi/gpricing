@@ -58,13 +58,8 @@ function formatarCampoMoeda(input) {
 const camposMoeda = [
   "cgDianteiroMichelin",
   "cgDianteiroVipal",
-  "cgTraseiroMichelin",
-  "cgTraseiroVipal",
-  "brosDianteiroMichelin",
-  "brosDianteiroVipal",
-  "brosTraseiroMichelin"
+  "cgTraseiroMichelin"
 ];
-
 camposMoeda.forEach(id => {
   const campo = document.getElementById(id);
 
@@ -171,26 +166,17 @@ ESTADO: ${get("estado")}
 
 PREÇOS INFORMADOS
 
-110/80 X14 TRAS BIZ POP (Larga) - Câmara de AR - Borracha Natural
+100/90-18M/CTL 56P - TRASEIRO SEM CAMARA
+Preço Vipal:
 ${formatarMoeda(limparMoeda(get("cgDianteiroMichelin")))}
 
-3.00 X14 TRAS BIZ100/125 POP100 - Câmara de AR - Borracha Natural
+90/90-18M/CTL 51P - TRASEIRO SEM CAMARA
+Preço Vipal:
 ${formatarMoeda(limparMoeda(get("cgDianteiroVipal")))}
 
-2.50 X17 DIANT BIZ100/125 POP / CRYPTON - Câmara de AR - Borracha Natural
+2.75-18M/CTL 42P - DIANTEIRO SEM CAMARA
+Preço Vipal:
 ${formatarMoeda(limparMoeda(get("cgTraseiroMichelin")))}
-
-110/90 X17 TRAS BROS125/150/FALCON/XT660 - Câmara de AR - Borracha Natural
-${formatarMoeda(limparMoeda(get("cgTraseiroVipal")))}
-
-3.00 X18 DIANT/TRAS YBR125/FACTOR/TITAN125/150/FAN - Câmara de AR - Borracha Natural
-${formatarMoeda(limparMoeda(get("brosDianteiroMichelin")))}
-
-4.10 X18 CBX200/DT/TORNADO/NX150/NX250/XR200/XRE - Câmara de AR - Borracha Natural
-${formatarMoeda(limparMoeda(get("brosDianteiroVipal")))}
-
-90/90 X19 DIANT BROS150 - Câmara de AR - Borracha Natural
-${formatarMoeda(limparMoeda(get("brosTraseiroMichelin")))}
 `;
 
   modalTexto.textContent = resumoEmail;
